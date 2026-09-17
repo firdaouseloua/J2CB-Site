@@ -1,501 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>JC2B 2026 | Junior Conference of Computational Biology</title>
-  <meta
-    name="description"
-    content="JC2B 2026 — Junior Conference of Computational Biology organised by students of the Master BIBS-IA at Université Paris-Saclay."
-  />
-  <meta name="theme-color" content="#062b49" />
+  <meta name="description" content="JC2B 2026 — Junior Conference of Computational Biology at Paris-Saclay." />
+  <meta name="theme-color" content="#061a2b" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header"></header>
 
-  <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <!-- HEADER -->
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a href="#top" class="brand">
-        <span class="brand-main">JC2B</span>
-        <span class="brand-year">2026</span>
-      </a>
-
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#highlights" data-i18n="navHighlights">Highlights</a>
-        <a href="#hub" data-i18n="navHub">Conference hub</a>
-        <a href="#partners" data-i18n="navPartners">Partners</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-      </nav>
-
-      <div class="nav-actions">
-        <div class="lang-switch" aria-label="Language switcher">
-          <button type="button" id="lang-fr">FR</button>
-          <span>/</span>
-          <button type="button" id="lang-en" class="active">EN</button>
-        </div>
-
-        <a href="#register" class="btn btn-sm btn-light" data-i18n="register">
-          Register
-        </a>
-
-        <button
-          class="menu-toggle"
-          id="menuToggle"
-          aria-label="Open mobile menu"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-          type="button"
-        >
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="mobile-menu-inner">
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#highlights" data-i18n="navHighlights">Highlights</a>
-        <a href="#hub" data-i18n="navHub">Conference hub</a>
-        <a href="#partners" data-i18n="navPartners">Partners</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-        <a href="#register" class="btn btn-primary mobile-register" data-i18n="register">Register</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="main-content">
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-grid"></div>
-
-      <div class="container hero-layout">
-        <div class="hero-copy">
-          <div class="hero-kicker-row">
-            <span class="eyebrow">JC2B 2026</span>
-            <span class="hero-line"></span>
-            <span class="hero-meta" data-i18n="heroMeta">
-              Junior Conference of Computational Biology
-            </span>
-          </div>
-
-          <h1 data-i18n="heroTitle">
-            A student-led scientific conference in
-            bioinformatics, biostatistics and computational biology.
-          </h1>
-
-          <p class="hero-lead" data-i18n="heroLead">
-            Organised by students of the Master BIBS-IA at Université Paris-Saclay,
-            JC2B brings together students, PhD candidates, postdocs, researchers and
-            professionals around current advances in computational biology.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#register" class="btn btn-primary" data-i18n="register">Register</a>
-            <a href="#hub" class="btn btn-ghost" data-i18n="exploreConference">Explore the conference</a>
-          </div>
-
-          <div class="hero-chips">
-            <span data-i18n="chip1">Young scientists</span>
-            <span data-i18n="chip2">Scientific exchange</span>
-            <span data-i18n="chip3">Networking</span>
-            <span data-i18n="chip4">Paris-Saclay</span>
-          </div>
-        </div>
-
-        <aside class="hero-panel">
-          <div class="panel-top">
-            <span>JC2B / 2026</span>
-            <span class="live-dot"></span>
-          </div>
-
-          <div class="panel-visual" aria-hidden="true">
-            <div class="seq-row">
-              <span>A</span><i></i><span>G</span><i></i><span>C</span>
-            </div>
-            <div class="seq-row shift">
-              <span>T</span><i></i><span>C</span><i></i><span>A</span>
-            </div>
-            <div class="seq-row">
-              <span>G</span><i></i><span>A</span><i></i><span>T</span>
-            </div>
-            <div class="seq-row shift">
-              <span>C</span><i></i><span>T</span><i></i><span>G</span>
-            </div>
-          </div>
-
-          <div class="panel-info-grid">
-            <div class="panel-info">
-              <span data-i18n="dateLabel">Date</span>
-              <strong data-i18n="tba">To be announced</strong>
-            </div>
-            <div class="panel-info">
-              <span data-i18n="locationLabel">Location</span>
-              <strong>I2BC / Paris-Saclay</strong>
-            </div>
-            <div class="panel-info">
-              <span data-i18n="organisedBy">Organised by</span>
-              <strong>Master BIBS-IA</strong>
-            </div>
-            <div class="panel-info">
-              <span data-i18n="languageLabel">Language</span>
-              <strong data-i18n="english">English</strong>
-            </div>
-          </div>
-
-          <div class="panel-footer">
-            <img
-              src="images/logos/universite-paris-saclay.png"
-              alt="Université Paris-Saclay"
-              class="hero-logo"
-            />
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- QUICK FACTS BAR -->
-    <section class="facts-bar">
-      <div class="container facts-grid">
-        <div class="fact">
-          <span class="fact-label" data-i18n="fact1Label">Format</span>
-          <strong data-i18n="fact1Value">Conference day + selected talks</strong>
-        </div>
-        <div class="fact">
-          <span class="fact-label" data-i18n="fact2Label">Audience</span>
-          <strong data-i18n="fact2Value">Students, PhD candidates, postdocs, researchers</strong>
-        </div>
-        <div class="fact">
-          <span class="fact-label" data-i18n="fact3Label">Topics</span>
-          <strong data-i18n="fact3Value">Bioinformatics · Biostatistics · AI</strong>
-        </div>
-        <div class="fact">
-          <span class="fact-label" data-i18n="fact4Label">2025 spirit kept</span>
-          <strong data-i18n="fact4Value">Present · Connect · Collaborate</strong>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container intro-grid">
-        <div class="section-title-block">
-          <span class="section-tag">01 · <span data-i18n="aboutLabel">About</span></span>
-          <h2 data-i18n="aboutTitle">
-            Built by students, designed for scientific exchange.
-          </h2>
-        </div>
-
-        <div class="section-copy">
-          <p data-i18n="aboutP1">
-            JC2B is a student-organised conference that aims to highlight the work
-            of young scientists, strengthen links between training programmes, foster
-            intergenerational exchange, encourage collaboration between teams and open
-            networking opportunities in academia and industry.
-          </p>
-          <p data-i18n="aboutP2">
-            The 2025 edition featured a programme, abstracts, registration, call for
-            contributions, practical information, organization and contact sections;
-            this version keeps that structure but presents it in a more modern and
-            compact way.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- HIGHLIGHTS -->
-    <section class="section section-soft" id="highlights">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">02 · <span data-i18n="highlightsLabel">Highlights</span></span>
-          <h2 data-i18n="highlightsTitle">What JC2B is here to do.</h2>
-        </div>
-
-        <div class="cards-3">
-          <article class="info-card">
-            <div class="icon-box">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 18 L10 12 L14 15 L19 7" />
-                <circle cx="5" cy="18" r="1.5" />
-                <circle cx="10" cy="12" r="1.5" />
-                <circle cx="14" cy="15" r="1.5" />
-                <circle cx="19" cy="7" r="1.5" />
-              </svg>
-            </div>
-            <h3 data-i18n="card1Title">Present</h3>
-            <p data-i18n="card1Text">
-              Provide a platform for young scientists to present and discuss their work.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <div class="icon-box">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="7" cy="7" r="2" />
-                <circle cx="17" cy="7" r="2" />
-                <circle cx="12" cy="17" r="2" />
-                <path d="M8.5 8.5 L11 15 M15.5 8.5 L13 15 M9 7 H15" />
-              </svg>
-            </div>
-            <h3 data-i18n="card2Title">Connect</h3>
-            <p data-i18n="card2Text">
-              Strengthen links between students, programmes, laboratories and institutions.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <div class="icon-box">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="4" y="13" width="3" height="6" rx="1" />
-                <rect x="10.5" y="9" width="3" height="10" rx="1" />
-                <rect x="17" y="5" width="3" height="14" rx="1" />
-              </svg>
-            </div>
-            <h3 data-i18n="card3Title">Collaborate</h3>
-            <p data-i18n="card3Text">
-              Encourage new academic and industrial collaborations around computational biology.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SMART HUB -->
-    <section class="section" id="hub">
-      <div class="container hub-wrap">
-        <div class="section-head compact">
-          <span class="section-tag">03 · <span data-i18n="hubLabel">Conference hub</span></span>
-          <h2 data-i18n="hubTitle">Everything important in one place.</h2>
-          <p data-i18n="hubIntro">
-            Instead of making the homepage too long, the key information is grouped here.
-          </p>
-        </div>
-
-        <div class="hub-tabs" role="tablist" aria-label="Conference information tabs">
-          <button class="tab-btn active" type="button" data-tab="programme" role="tab" aria-selected="true" data-i18n="tabProgramme">Programme</button>
-          <button class="tab-btn" type="button" data-tab="contributions" role="tab" aria-selected="false" data-i18n="tabContributions">Contributions</button>
-          <button class="tab-btn" type="button" data-tab="registration" role="tab" aria-selected="false" data-i18n="tabRegistration">Registration</button>
-          <button class="tab-btn" type="button" data-tab="practical" role="tab" aria-selected="false" data-i18n="tabPractical">Practical info</button>
-        </div>
-
-        <div class="hub-panels">
-          <!-- PROGRAMME -->
-          <div class="tab-panel active" id="programme">
-            <div class="panel-grid-2">
-              <div class="mini-panel">
-                <h3 data-i18n="programmeTitle">Programme</h3>
-                <p data-i18n="programmeText">
-                  The conference programme will include keynote speakers, selected student talks,
-                  scientific exchange and networking moments.
-                </p>
-                <ul class="clean-list">
-                  <li data-i18n="programmeItem1">Keynote speakers</li>
-                  <li data-i18n="programmeItem2">Selected oral presentations</li>
-                  <li data-i18n="programmeItem3">Coffee breaks and lunch</li>
-                  <li data-i18n="programmeItem4">Scientific exchange and networking</li>
-                </ul>
-              </div>
-
-              <div class="mini-panel">
-                <h3 data-i18n="datesTitle">Important dates</h3>
-                <div class="date-list">
-                  <div><span data-i18n="submissionOpen">Submission opens</span><strong data-i18n="tba">To be announced</strong></div>
-                  <div><span data-i18n="submissionDeadline">Submission deadline</span><strong data-i18n="tba">To be announced</strong></div>
-                  <div><span data-i18n="registrationDeadline">Registration deadline</span><strong data-i18n="tba">To be announced</strong></div>
-                  <div><span data-i18n="conferenceDay">Conference day</span><strong data-i18n="tba">To be announced</strong></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CONTRIBUTIONS -->
-          <div class="tab-panel" id="contributions">
-            <div class="panel-grid-2">
-              <div class="mini-panel">
-                <h3 data-i18n="contribTitle">Call for contributions</h3>
-                <p data-i18n="contribText">
-                  JC2B welcomes submissions from students, PhD candidates and young researchers.
-                </p>
-                <ul class="clean-list">
-                  <li data-i18n="contribItem1">Language: English</li>
-                  <li data-i18n="contribItem2">Abstract: concise scientific summary</li>
-                  <li data-i18n="contribItem3">At least one author present at the event</li>
-                  <li data-i18n="contribItem4">Full 2026 guidelines coming soon</li>
-                </ul>
-              </div>
-
-              <div class="mini-panel accent-panel">
-                <h3 data-i18n="scopeTitle">Scientific scope</h3>
-                <div class="scope-tags">
-                  <span>Bioinformatics</span>
-                  <span>Biostatistics</span>
-                  <span>Computational Biology</span>
-                  <span>Artificial Intelligence</span>
-                  <span>Genomics & Omics</span>
-                  <span>Biomedical Data Science</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- REGISTRATION -->
-          <div class="tab-panel" id="registration">
-            <div class="panel-grid-2">
-              <div class="mini-panel" id="register">
-                <h3 data-i18n="registrationTitle">Registration</h3>
-                <p data-i18n="registrationText">
-                  Participation will be free and registration will be required for logistical reasons.
-                </p>
-                <ul class="clean-list">
-                  <li data-i18n="registrationItem1">Access to all sessions</li>
-                  <li data-i18n="registrationItem2">Lunch / buffet</li>
-                  <li data-i18n="registrationItem3">Coffee breaks</li>
-                  <li data-i18n="registrationItem4">Conference materials / goodies while stocks last</li>
-                </ul>
-                <a href="#" class="btn btn-primary disabled-btn" aria-disabled="true" data-i18n="registrationSoon">Registration opening soon</a>
-              </div>
-
-              <div class="mini-panel">
-                <h3 data-i18n="faqTitle">FAQ</h3>
-                <div class="faq-list">
-                  <details open>
-                    <summary data-i18n="faqQ1">Is registration mandatory?</summary>
-                    <p data-i18n="faqA1">Yes, for logistics, meals, badges and room capacity.</p>
-                  </details>
-                  <details>
-                    <summary data-i18n="faqQ2">Can I cancel my registration?</summary>
-                    <p data-i18n="faqA2">Yes. Cancellation details will be confirmed for the 2026 edition.</p>
-                  </details>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- PRACTICAL -->
-          <div class="tab-panel" id="practical">
-            <div class="panel-grid-2">
-              <div class="mini-panel">
-                <h3 data-i18n="practicalTitle">Practical information</h3>
-                <p data-i18n="practicalText">
-                  The conference venue, full access details and transportation information will be published here.
-                </p>
-                <div class="address-block">
-                  <strong data-i18n="venueLabel">Venue</strong>
-                  <p>I2BC – Building 21<br />1 Avenue de la Terrasse<br />91190 Gif-sur-Yvette</p>
-                </div>
-              </div>
-
-              <div class="mini-panel">
-                <h3 data-i18n="accessTitle">Access</h3>
-                <ul class="clean-list">
-                  <li data-i18n="access1">Public transport access details coming soon</li>
-                  <li data-i18n="access2">Walking / bus options from nearby stations</li>
-                  <li data-i18n="access3">Parking information to be confirmed</li>
-                  <li data-i18n="access4">Map and directions will be added</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PARTNERS -->
-    <section class="section section-deep" id="partners">
-      <div class="container">
-        <div class="section-head section-head-light">
-          <span class="section-tag light">04 · <span data-i18n="partnersLabel">Partners & support</span></span>
-          <h2 data-i18n="partnersTitle">The organisations supporting JC2B.</h2>
-          <p data-i18n="partnersText">
-            Real partner logos can be displayed here for a more official and professional look.
-          </p>
-        </div>
-
-        <div class="logo-grid">
-          <div class="logo-card">
-            <img src="images/logos/universite-paris-saclay.png" alt="Université Paris-Saclay" />
-          </div>
-          <div class="logo-card">
-            <img src="images/logos/i2bc.png" alt="I2BC" />
-          </div>
-          <div class="logo-card">
-            <img src="images/logos/graduate-school-lsh.png" alt="Graduate School LSH" />
-          </div>
-          <div class="logo-card">
-            <img src="images/logos/livingmachinesatwork.png" alt="LivingMachines@Work" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT / FOOTER CTA -->
-    <section class="section section-soft" id="contact">
-      <div class="container contact-grid">
+  <main id="main">
+    <section class="home-hero">
+      <div class="container home-hero-inner">
         <div>
-          <span class="section-tag">05 · <span data-i18n="contactLabel">Contact</span></span>
-          <h2 data-i18n="contactTitle">Need information about JC2B 2026?</h2>
-          <p data-i18n="contactText">
-            For questions about the conference, organisation, submissions or registration,
-            contact the organising team.
-          </p>
+          <span class="eyebrow" data-i18n="homeEyebrow">Junior Conference of Computational Biology · 2026</span>
+          <h1 class="home-title"><span data-i18n="homeTitleA">La biologie computationnelle,</span><span class="accent" data-i18n="homeTitleB">connectée.</span></h1>
+          <p class="home-lead" data-i18n="homeLead">La JC2B est un rendez-vous scientifique consacré à la bioinformatique, aux biostatistiques, à l'intelligence artificielle et aux sciences computationnelles du vivant.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="registration.html" data-i18n="register">S'inscrire</a>
+            <a class="btn btn-light-outline" href="scope.html" data-i18n="discoverScope">Découvrir les thématiques scientifiques</a>
+          </div>
         </div>
 
-        <div class="contact-card">
-          <p><strong>Email</strong><br />jc2b.paris.saclay@gmail.com</p>
-          <p><strong data-i18n="organisedBy">Organised by</strong><br />Master BIBS-IA students<br />Université Paris-Saclay</p>
-          <a href="mailto:jc2b.paris.saclay@gmail.com" class="btn btn-primary" data-i18n="emailUs">
-            Email us
-          </a>
+        <div class="brand-visual" aria-label="JC2B 2026 conference identity">
+          <div class="brand-orbit orbit-a"></div>
+          <div class="brand-orbit orbit-b"></div>
+          <div class="brand-orbit orbit-c"></div>
+          <div class="brand-glow"></div>
+
+          <div class="hero-logo-stage">
+            <img src="images/logos/jc2b-2026-transparent.png" alt="JC2B 2026 — Junior Conference of Computational Biology" />
+          </div>
+
+          <div class="field-pill pill-1"><span></span>Bioinformatics</div>
+          <div class="field-pill pill-2"><span></span>Biostatistics</div>
+          <div class="field-pill pill-3"><span></span>AI & Data Science</div>
+          <div class="field-pill pill-4"><span></span>Omics</div>
+
+          <div class="edition-chip">
+            <span data-i18n="editionLabel">2026 edition</span>
+            <strong>Paris-Saclay</strong>
+          </div>
         </div>
       </div>
     </section>
 
+    <div class="home-snapshot">
+      <div class="container">
+        <div class="snapshot-card">
+          <div class="snapshot-label"><strong data-i18n="snapshotLabel">La conférence en bref</strong></div>
+          <div class="snapshot-item"><span data-i18n="snapshotDate">Date</span><strong data-config="date" data-fallback="À venir" data-i18n="tba">À venir</strong></div>
+          <div class="snapshot-item"><span data-i18n="snapshotVenue">Lieu</span><strong data-config="venue">I2BC · Paris-Saclay</strong></div>
+          <div class="snapshot-item"><span data-i18n="snapshotLanguage">Langue de travail</span><strong data-i18n="snapshotLangValue">Anglais</strong></div>
+          <div class="snapshot-item"><span data-i18n="snapshotFormat">Format</span><strong data-i18n="snapshotFormatValue">Présentations · discussions · networking</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="home-intro-grid">
+          <div><h2 data-i18n="homeIntroTitle">Une conférence. Plusieurs façons d'aborder les données biologiques.</h2></div>
+          <div><p data-i18n="homeIntroText">La JC2B réunit des approches quantitatives complémentaires autour des questions biologiques : modélisation statistique, analyse omique, machine learning et workflows computationnels reproductibles.</p></div>
+        </div>
+
+        <div class="link-card-grid">
+          <a class="link-card" href="about.html"><span class="link-arrow">↗</span><h3 data-i18n="homeCardAbout">Qu'est-ce que la JC2B ?</h3><p data-i18n="homeCardAboutText">Mission, public et identité scientifique.</p></a>
+          <a class="link-card" href="scope.html"><span class="link-arrow">↗</span><h3 data-i18n="homeCardScope">Thématiques scientifiques</h3><p data-i18n="homeCardScopeText">Explorer les domaines de recherche représentés à la JC2B.</p></a>
+          <a class="link-card" href="programme.html"><span class="link-arrow">↗</span><h3 data-i18n="homeCardProgramme">Programme</h3><p data-i18n="homeCardProgrammeText">Présentations, contributions sélectionnées et structure de la journée.</p></a>
+          <a class="link-card" href="abstracts.html"><span class="link-arrow">↗</span><h3 data-i18n="homeCardAbstracts">Résumés</h3><p data-i18n="homeCardAbstractsText">Comment soumettre une contribution et où les résumés acceptés seront publiés.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration-band">
+      <div class="container registration-band-inner">
+        <div>
+          <h2 data-i18n="homeRegistrationTitle">L'inscription et la soumission d'un résumé passent par un seul formulaire.</h2>
+          <p data-i18n="homeRegistrationText">Chaque participant s'inscrit une seule fois. Le formulaire lui demande ensuite s'il souhaite également soumettre une contribution scientifique.</p>
+        </div>
+        <a class="btn btn-primary" href="registration.html" data-i18n="openRegistration">Ouvrir l'inscription</a>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <div class="footer-brand">
-        <div class="footer-brand-top">
-          <span class="brand-main">JC2B</span>
-          <span class="brand-year">2026</span>
-        </div>
-        <p data-i18n="footerText">
-          Junior Conference of Computational Biology organised by students of the Master BIBS-IA at Université Paris-Saclay.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#hub" data-i18n="navHub">Conference hub</a>
-        <a href="#partners" data-i18n="navPartners">Partners</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-      </div>
-
-      <div class="footer-logo-box">
-        <img src="images/logos/universite-paris-saclay.png" alt="Université Paris-Saclay" />
-      </div>
-    </div>
-  </footer>
-
-  <!-- BACK TO TOP -->
-  <button id="backToTop" class="back-to-top" aria-label="Back to top" type="button">
-    ↑
-  </button>
-
-  <script src="js/app.js"></script>
-  <script src="js/i18n.js"></script>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/site-config.js"></script><script src="js/nav.js"></script><script src="js/app.js"></script><script src="js/i18n.js"></script>
 </body>
 </html>
