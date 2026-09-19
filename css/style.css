@@ -105,7 +105,7 @@ button { font: inherit; }
 .home-hero-inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1.2fr .8fr; gap: 70px; align-items: center; min-height: 650px; padding: 72px 0; }
 .eyebrow { display: inline-flex; align-items: center; gap: 12px; color: #73e1a5; text-transform: uppercase; letter-spacing: .16em; font-size: .74rem; font-weight: 800; }
 .eyebrow::before { content: ""; width: 42px; height: 1px; background: #73e1a5; }
-.home-title { margin: 24px 0 22px; max-width: 790px; font-family: "Space Grotesk", Inter, sans-serif; font-size: clamp(4.1rem, 8vw, 7.7rem); line-height: .88; letter-spacing: -.065em; }
+.home-title { margin: 24px 0 22px; max-width: 790px; font-family: "Space Grotesk", Inter, sans-serif; font-size: clamp(3rem, 6vw, 5.8rem); line-height: .98; letter-spacing: -.05em; overflow-wrap: break-word; }
 .home-title .accent { color: #56d58d; display: block; }
 .home-lead { max-width: 720px; margin: 0; color: rgba(255,255,255,.76); font-size: 1.12rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
@@ -226,7 +226,7 @@ h2 { margin: 0 0 16px; color: var(--navy); font-size: clamp(2.3rem, 4.6vw, 4.3re
 .page-hero { position: relative; overflow: hidden; background: var(--navy); color: #fff; padding: 78px 0 72px; }
 .page-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 85% 35%, rgba(53,200,119,.18), transparent 26%), linear-gradient(120deg, rgba(255,255,255,.025) 1px, transparent 1px); background-size: auto, 56px 56px; }
 .page-hero .container { position: relative; z-index: 1; }
-.page-hero h1 { margin: 16px 0 18px; max-width: 930px; font-size: clamp(3.1rem,6vw,6rem); line-height: .94; letter-spacing: -.055em; }
+.page-hero h1 { margin: 16px 0 18px; max-width: 930px; font-size: clamp(2.8rem,5.4vw,5.4rem); line-height: .98; letter-spacing: -.05em; overflow-wrap: break-word; }
 .page-hero p { max-width: 780px; margin: 0; color: rgba(255,255,255,.74); font-size: 1.08rem; }
 .page-hero .eyebrow { font-size: .72rem; }
 
