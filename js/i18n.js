@@ -127,6 +127,7 @@ const translations = {
     openForm: "Open the registration form",
     formEmbedHint: "An embedded form can also appear here once an embed URL is configured.",
     footerText: "Junior Conference of Computational Biology · Paris-Saclay.",
+    footerPartner : "Our partners",
     footerHost: "Junior Conference of Computational Biology",
     // Form Translations (EN)
     noticeCapTitle: "Capacity Limit: 199 Attendees",
@@ -308,6 +309,7 @@ const translations = {
     openForm: "Ouvrir le formulaire d'inscription",
     formEmbedHint: "Le formulaire pourra aussi être affiché directement ici lorsqu'une URL d'intégration sera configurée.",
     footerText: "Junior Conference of Computational Biology · Paris-Saclay.",
+    footerPartner : "Nos partenaires",
     footerHost: "Junior Conference of Computational Biology",
     // Form Translations (FR)
     noticeCapTitle: "Capacité d'accueil : 199 places",

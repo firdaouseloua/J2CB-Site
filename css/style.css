@@ -302,8 +302,25 @@ h2 { margin: 0 0 16px; color: var(--navy); font-size: clamp(2.3rem, 4.6vw, 4.3re
 
 .site-footer { border-top: 1px solid var(--line); background: #fff; padding: 42px 0 22px; }
 .footer-grid { display: grid; grid-template-columns: 1.3fr .75fr .75fr; gap: 38px; align-items: start; }
-.footer-logo img { width: 118px; height: 66px; object-fit: contain; object-position: left; }
-.footer-brand p { max-width: 350px; color: var(--muted); font-size: .9rem; margin: 10px 0 0; }
+.footer-logo img { width: 140px; height: 70px; object-fit: contain; object-position: left; }
+.footer-brand {
+  max-width: 350px; color: var(--muted); font-size: .9rem; margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.footer-main-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-secondary-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
 .footer-links { display: grid; gap: 10px; }
 .footer-links a { color: #4d606d; font-size: .92rem; }
 .footer-links a:hover { color: var(--green); }
@@ -341,7 +358,12 @@ h2 { margin: 0 0 16px; color: var(--navy); font-size: clamp(2.3rem, 4.6vw, 4.3re
   .feature-grid, .two-col { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .footer-brand { grid-column: 1 / -1; }
+  /*.footer-brand { grid-column: 1 / -1; }*/
+  .footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Espace entre le bloc JC2B et la ligne des autres logos */
+  }
 }
 
 @media (max-width: 640px) {
@@ -373,7 +395,12 @@ h2 { margin: 0 0 16px; color: var(--navy); font-size: clamp(2.3rem, 4.6vw, 4.3re
   .page-hero h1 { font-size: clamp(3rem,14vw,4.8rem); }
   .link-card-grid, .scope-grid, .programme-grid, .registration-paths { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
-  .footer-brand { grid-column: auto; }
+  /*.footer-brand { grid-column: auto; }*/
+  .footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Espace entre le bloc JC2B et la ligne des autres logos */
+  }
   .footer-bottom { flex-direction: column; gap: 6px; }
   .form-shell-header { align-items: flex-start; flex-direction: column; }
   .form-placeholder { padding: 28px 20px; min-height: 330px; }

@@ -52,8 +52,20 @@
     footer.innerHTML = `
       <div class="container footer-grid">
         <div class="footer-brand">
-          <a class="footer-logo" href="index.html"><img src="images/logos/jc2b-2026-transparent.png" alt="JC2B 2026" /></a>
-          <p data-i18n="footerText">Junior Conference of Computational Biology · Paris-Saclay.</p>
+          <div class="footer-main-block">
+            <a class="footer-logo" href="index.html"><img src="images/logos/jc2b-2026-transparent.png" alt="JC2B 2026" /></a>
+            <p data-i18n="footerText">Junior Conference of Computational Biology · Paris-Saclay.</p>
+          </div>
+
+          <div class="footer-main-block">
+            <p data-i18n="footerPartner">Nos partenaires</p>
+          </div>
+
+          <div class="footer-secondary-logos">
+            <a class="footer-logo" href="index.html"><img src="images/logos/paris-saclay-university1609.jpg" alt="Paris Saclay" /></a>
+            <a class="footer-logo" href="index.html"><img src="images/logos/logo-i2bc_black.png" alt="I2BC" /></a>
+            <a class="footer-logo" href="index.html"><img src="images/logos/R.jpg" alt="Graduate" /></a>
+          </div>
         </div>
 
         <div class="footer-links">
