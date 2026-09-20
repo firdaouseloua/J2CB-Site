@@ -1,300 +1,383 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Registration | JC2B 2026</title>
-  <meta name="theme-color" content="#061a2b"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
-</head>
-<body data-page="registration">
-  <header class="site-header" id="site-header"></header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Registration | JC2B 2026</title>
+    <meta name="theme-color" content="#061a2b" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="registration">
+    <header class="site-header" id="site-header"></header>
 
-  <main>
-    <!-- Teammates' Hero Section -->
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow" data-i18n="registrationEyebrow">Registration</span>
-        <h1 data-i18n="registrationTitle">Attendee Registration & Abstracts</h1>
-        <p data-i18n="registrationLead">Join us for JC2B 2026. Registration is free of charge and open to all participants.</p>
-      </div>
-    </section>
-
-    <!-- Teammates' Path Cards -->
-    <section class="section section-soft">
-      <div class="container">
-        <div class="registration-paths">
-          <article class="path-card">
-            <strong data-i18n="regPathAttend">Attend</strong>
-            <p data-i18n="regPathAttendText">Access all keynote talks, scientific sessions, lunch, and coffee breaks.</p>
-          </article>
-          <article class="path-card">
-            <strong data-i18n="regPathPresent">Present</strong>
-            <p data-i18n="regPathPresentText">Submit an abstract below to be considered for an oral talk or poster session.</p>
-          </article>
+    <main>
+      <!-- Teammates' Hero Section -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow" data-i18n="registrationEyebrow">Registration</span>
+          <h1 data-i18n="registrationTitle">Attendee Registration & Abstracts</h1>
+          <p data-i18n="registrationLead">
+            Join us for JC2B 2026. Registration is free of charge and open to all participants.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Main Form Section -->
-    <section class="section">
-      <div class="container">
-        
-        <!-- Attendance Notice -->
-        <div class="notice-card" style="margin-bottom: 2rem;">
-          <div class="notice-icon">⚠️</div>
-          <div class="notice-body">
-            <h2 data-i18n="noticeCapTitle">Capacity Limit: 199 Attendees</h2>
-            <p data-i18n="noticeCapText">Due to auditorium safety regulations, in-person attendance is strictly limited to 199 participants on a first-come, first-served basis.</p>
+      <!-- Teammates' Path Cards -->
+      <section class="section section-soft">
+        <div class="container">
+          <div class="registration-paths">
+            <article class="path-card">
+              <strong data-i18n="regPathAttend">Attend</strong>
+              <p data-i18n="regPathAttendText">
+                Access all keynote talks, scientific sessions, lunch, and coffee breaks.
+              </p>
+            </article>
+            <article class="path-card">
+              <strong data-i18n="regPathPresent">Present</strong>
+              <p data-i18n="regPathPresentText">
+                Submit an abstract below to be considered for an oral talk or poster session.
+              </p>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="form-shell">
-          <div class="form-shell-header">
-            <h2 data-i18n="formTitle">Registration Form</h2>
+      <!-- Main Form Section -->
+      <section class="section">
+        <div class="container">
+          <!-- Attendance Notice -->
+          <div class="notice-card" style="margin-bottom: 2rem">
+            <div class="notice-icon">⚠️</div>
+            <div class="notice-body">
+              <h2 data-i18n="noticeCapTitle">Capacity Limit: 199 Attendees</h2>
+              <p data-i18n="noticeCapText">
+                Due to auditorium safety regulations, in-person attendance is strictly limited to 199 participants on a
+                first-come, first-served basis.
+              </p>
+            </div>
           </div>
 
-          <!-- Custom HTML Form -->
-          <div class="form-wrapper" style="border:none; box-shadow:none;">
-            <form id="registration-form" action="https://script.google.com/macros/s/AKfycbzlIW0qigZwTNQg7JdAI_xnHXofsQj2mszOenhGt9zVaQgp6RKy7JsM7SdpL9ehFza0cg/exec" method="POST">
+          <div class="form-shell">
+            <div class="form-shell-header">
+              <h2 data-i18n="formTitle">Registration Form</h2>
+            </div>
 
-              <!-- 1. Personal Details -->
-              <fieldset class="form-section">
-                <legend data-i18n="formSection1">1. Personal Details</legend>
-                <div class="form-group">
-                  <label for="fullName"><span data-i18n="labelFullName">Full Name</span> <span class="req">*</span></label>
-                  <input type="text" id="fullName" name="name" required placeholder="Jane Doe">
-                </div>
-                <div class="form-group">
-                  <label for="email"><span data-i18n="labelEmail">Email Address</span> <span class="req">*</span></label>
-                  <input type="email" id="email" name="_replyto" required placeholder="jane.doe@university.edu">
-                  <small data-i18n="hintEmail">Your confirmation badge and logistics updates will be sent here.</small>
-                </div>
-              </fieldset>
-
-              <!-- 2. Demographic & Academic Information -->
-              <fieldset class="form-section">
-                <legend data-i18n="formSection2">2. Demographic & Academic Information</legend>
-                <div class="info-callout">
-                  <p data-i18n="infoWhyStats">Why do we ask for this? These details are collected strictly for anonymized statistical reporting to evaluate attendee diversity and support funding/grant applications for future conference editions.</p>
-                </div>
-
-                <div class="form-grid">
+            <!-- Custom HTML Form -->
+            <div class="form-wrapper" style="border: none; box-shadow: none">
+              <form
+                id="registration-form"
+                action="https://script.google.com/macros/s/AKfycbzlIW0qigZwTNQg7JdAI_xnHXofsQj2mszOenhGt9zVaQgp6RKy7JsM7SdpL9ehFza0cg/exec"
+                method="POST"
+              >
+                <!-- 1. Personal Details -->
+                <fieldset class="form-section">
+                  <legend data-i18n="formSection1">1. Personal Details</legend>
                   <div class="form-group">
-                    <label for="role"><span data-i18n="labelRole">Academic Status</span> <span class="req">*</span></label>
-                    <select id="role" name="role" required>
-                      <option value="" disabled selected data-i18n="roleDefault">Select current status</option>
-                      <option value="undergraduate" data-i18n="roleUndergrad">Undergraduate Student (Licence / BSc)</option>
-                      <option value="master" data-i18n="roleMaster">Master's Student (MSc)</option>
-                      <option value="phd" data-i18n="rolePhd">PhD Candidate</option>
-                      <option value="postdoc" data-i18n="rolePostdoc">Postdoctoral Researcher</option>
-                      <option value="faculty" data-i18n="roleFaculty">Faculty / Research Staff</option>
-                      <option value="industry" data-i18n="roleIndustry">Industry Professional</option>
-                      <option value="other" data-i18n="roleOther">Other</option>
+                    <label for="fullName">
+                      <span data-i18n="labelFullName">Full Name</span>
+                      <span class="req">*</span>
+                    </label>
+                    <input type="text" id="fullName" name="name" required placeholder="Jane Doe" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">
+                      <span data-i18n="labelEmail">Email Address</span>
+                      <span class="req">*</span>
+                    </label>
+                    <input type="email" id="email" name="_replyto" required placeholder="jane.doe@university.edu" />
+                    <small data-i18n="hintEmail">
+                      Your confirmation badge and logistics updates will be sent here.
+                    </small>
+                  </div>
+                </fieldset>
+
+                <!-- 2. Demographic & Academic Information -->
+                <fieldset class="form-section">
+                  <legend data-i18n="formSection2">2. Demographic & Academic Information</legend>
+                  <div class="info-callout">
+                    <p data-i18n="infoWhyStats">
+                      Why do we ask for this? These details are collected strictly for anonymized statistical reporting
+                      to evaluate attendee diversity and support funding/grant applications for future conference
+                      editions.
+                    </p>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="role">
+                        <span data-i18n="labelRole">Academic Status</span>
+                        <span class="req">*</span>
+                      </label>
+                      <select id="role" name="role" required>
+                        <option value="" disabled selected data-i18n="roleDefault">Select current status</option>
+                        <option value="undergraduate" data-i18n="roleUndergrad">
+                          Undergraduate Student (Licence / BSc)
+                        </option>
+                        <option value="master" data-i18n="roleMaster">Master's Student (MSc)</option>
+                        <option value="phd" data-i18n="rolePhd">PhD Candidate</option>
+                        <option value="postdoc" data-i18n="rolePostdoc">Postdoctoral Researcher</option>
+                        <option value="faculty" data-i18n="roleFaculty">Faculty / Research Staff</option>
+                        <option value="industry" data-i18n="roleIndustry">Industry Professional</option>
+                        <option value="other" data-i18n="roleOther">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="institution">
+                        <span data-i18n="labelInstitution">Affiliation / Institution</span>
+                        <span class="req">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="institution"
+                        name="institution"
+                        required
+                        placeholder="University / Institute"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="origin">
+                        <span data-i18n="labelOrigin">Geographic Location</span>
+                        <span class="req">*</span>
+                      </label>
+                      <select id="origin" name="geographic_origin" required>
+                        <option value="" disabled selected data-i18n="originDefault">Select your location</option>
+                        <option value="ile-de-france" data-i18n="originIdf">Île-de-France (Paris Region)</option>
+                        <option value="french-provinces" data-i18n="originProvinces">
+                          France (Outside Île-de-France)
+                        </option>
+                        <option value="europe" data-i18n="originEurope">International (Europe)</option>
+                        <option value="outside-europe" data-i18n="originOutsideEurope">
+                          International (Outside Europe)
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="gender"><span data-i18n="labelGender">Gender</span></label>
+                      <select id="gender" name="gender">
+                        <option value="" disabled selected data-i18n="genderDefault">Select an option</option>
+                        <option value="female" data-i18n="genderFemale">Female</option>
+                        <option value="male" data-i18n="genderMale">Male</option>
+                        <option value="non-binary" data-i18n="genderNonBinary">Non-binary</option>
+                        <option value="prefer-not-to-say" data-i18n="genderPreferNot">Prefer not to say</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Moved here: Discovery Source -->
+                  <div class="form-group">
+                    <label for="discovery">
+                      <span data-i18n="labelDiscovery">How did you hear about this conference?</span>
+                      <span class="req">*</span>
+                    </label>
+                    <select id="discovery" name="discovery_source" required>
+                      <option value="" disabled selected data-i18n="discDefault">Select an option</option>
+                      <option value="institutional-email" data-i18n="discEmail">
+                        Institutional email / Mailing list
+                      </option>
+                      <option value="professor-advisor" data-i18n="discProf">Professor / Research advisor</option>
+                      <option value="social-media" data-i18n="discSocial">Social media</option>
+                      <option value="campus-poster" data-i18n="discPoster">Campus poster or flyer</option>
+                      <option value="word-of-mouth" data-i18n="discWord">Word of mouth / Colleague</option>
+                      <option value="other" data-i18n="discOther">Other</option>
                     </select>
                   </div>
-                  <div class="form-group">
-                    <label for="institution"><span data-i18n="labelInstitution">Affiliation / Institution</span> <span class="req">*</span></label>
-                    <input type="text" id="institution" name="institution" required placeholder="University / Institute">
-                  </div>
-                </div>
+                </fieldset>
 
-                <div class="form-grid">
-                  <div class="form-group">
-                    <label for="origin"><span data-i18n="labelOrigin">Geographic Location</span> <span class="req">*</span></label>
-                    <select id="origin" name="geographic_origin" required>
-                      <option value="" disabled selected data-i18n="originDefault">Select your location</option>
-                      <option value="ile-de-france" data-i18n="originIdf">Île-de-France (Paris Region)</option>
-                      <option value="french-provinces" data-i18n="originProvinces">France (Outside Île-de-France)</option>
-                      <option value="europe" data-i18n="originEurope">International (Europe)</option>
-                      <option value="outside-europe" data-i18n="originOutsideEurope">International (Outside Europe)</option>
-                    </select>
+                <!-- 3. Abstract Submission -->
+                <fieldset class="form-section">
+                  <legend data-i18n="formSection3">3. Call for Abstracts</legend>
+                  <div class="checkbox-group">
+                    <input type="checkbox" id="wantsAbstract" name="wants_abstract" value="yes" />
+                    <label for="wantsAbstract">
+                      <strong data-i18n="labelWantsAbstract">
+                        Would you like to submit an abstract to present your work?
+                      </strong>
+                    </label>
                   </div>
-                  <div class="form-group">
-                    <label for="gender"><span data-i18n="labelGender">Gender</span></label>
-                    <select id="gender" name="gender">
-                      <option value="" disabled selected data-i18n="genderDefault">Select an option</option>
-                      <option value="female" data-i18n="genderFemale">Female</option>
-                      <option value="male" data-i18n="genderMale">Male</option>
-                      <option value="non-binary" data-i18n="genderNonBinary">Non-binary</option>
-                      <option value="prefer-not-to-say" data-i18n="genderPreferNot">Prefer not to say</option>
-                    </select>
+
+                  <div id="abstract-fields" class="conditional-block hidden">
+                    <div class="abstract-alert">
+                      <p data-i18n="abstractNotice">
+                        ℹ️ Selected abstracts will be considered for an oral talk or poster presentation. You will be
+                        contacted individually via email by the scientific committee regarding the final editorial
+                        decision.
+                      </p>
+                    </div>
+                    <div class="form-group">
+                      <label for="talkTitle">
+                        <span data-i18n="labelTalkTitle">Presentation Title</span>
+                        <span class="req">*</span>
+                      </label>
+                      <input type="text" id="talkTitle" name="abstract_title" />
+                    </div>
+                    <div class="form-group">
+                      <label for="talkAffiliation">
+                        <span data-i18n="labelTalkAffiliation">Presentation Affiliation (Lab / Unit)</span>
+                        <span class="req">*</span>
+                      </label>
+                      <input type="text" id="talkAffiliation" name="abstract_affiliation" />
+                    </div>
+                    <div class="form-group">
+                      <label for="abstractText">
+                        <span data-i18n="labelAbstractText">Abstract (max 500 characters)</span>
+                        <span class="req">*</span>
+                      </label>
+                      <textarea id="abstractText" name="abstract_content" rows="4" maxlength="500"></textarea>
+                      <div class="char-counter">
+                        <span id="charCount">0</span>
+                        / 500
+                        <span data-i18n="charCounterLabel">characters</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </fieldset>
 
-                <!-- Moved here: Discovery Source -->
-                <div class="form-group">
-                  <label for="discovery"><span data-i18n="labelDiscovery">How did you hear about this conference?</span> <span class="req">*</span></label>
-                  <select id="discovery" name="discovery_source" required>
-                    <option value="" disabled selected data-i18n="discDefault">Select an option</option>
-                    <option value="institutional-email" data-i18n="discEmail">Institutional email / Mailing list</option>
-                    <option value="professor-advisor" data-i18n="discProf">Professor / Research advisor</option>
-                    <option value="social-media" data-i18n="discSocial">Social media</option>
-                    <option value="campus-poster" data-i18n="discPoster">Campus poster or flyer</option>
-                    <option value="word-of-mouth" data-i18n="discWord">Word of mouth / Colleague</option>
-                    <option value="other" data-i18n="discOther">Other</option>
-                  </select>
-                </div>
-              </fieldset>
-
-              <!-- 3. Abstract Submission -->
-              <fieldset class="form-section">
-                <legend data-i18n="formSection3">3. Call for Abstracts</legend>
-                <div class="checkbox-group">
-                  <input type="checkbox" id="wantsAbstract" name="wants_abstract" value="yes">
-                  <label for="wantsAbstract"><strong data-i18n="labelWantsAbstract">Would you like to submit an abstract to present your work?</strong></label>
-                </div>
-
-                <div id="abstract-fields" class="conditional-block hidden">
-                  <div class="abstract-alert">
-                    <p data-i18n="abstractNotice">ℹ️ Selected abstracts will be considered for an oral talk or poster presentation. You will be contacted individually via email by the scientific committee regarding the final editorial decision.</p>
+                <!-- 4. Terms & Confirmation -->
+                <fieldset class="form-section">
+                  <legend data-i18n="formSection4">4. Commitment & Confirmation</legend>
+                  <div class="checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" value="agreed" required />
+                    <label for="consent" data-i18n="labelConsent">
+                      I understand attendance is capped at 199 participants, and I agree to notify organizers if I
+                      cannot attend.
+                    </label>
                   </div>
-                  <div class="form-group">
-                    <label for="talkTitle"><span data-i18n="labelTalkTitle">Presentation Title</span> <span class="req">*</span></label>
-                    <input type="text" id="talkTitle" name="abstract_title">
-                  </div>
-                  <div class="form-group">
-                    <label for="talkAffiliation"><span data-i18n="labelTalkAffiliation">Presentation Affiliation (Lab / Unit)</span> <span class="req">*</span></label>
-                    <input type="text" id="talkAffiliation" name="abstract_affiliation">
-                  </div>
-                  <div class="form-group">
-                    <label for="abstractText"><span data-i18n="labelAbstractText">Abstract (max 500 characters)</span> <span class="req">*</span></label>
-                    <textarea id="abstractText" name="abstract_content" rows="4" maxlength="500"></textarea>
-                    <div class="char-counter"><span id="charCount">0</span> / 500 <span data-i18n="charCounterLabel">characters</span></div>
-                  </div>
-                </div>
-              </fieldset>
+                </fieldset>
 
-              <!-- 4. Terms & Confirmation -->
-              <fieldset class="form-section">
-                <legend data-i18n="formSection4">4. Commitment & Confirmation</legend>
-                <div class="checkbox-group">
-                  <input type="checkbox" id="consent" name="consent" value="agreed" required>
-                  <label for="consent" data-i18n="labelConsent">
-                    I understand attendance is capped at 199 participants, and I agree to notify organizers if I cannot attend.
-                  </label>
-                </div>
-              </fieldset>
+                <button
+                  type="submit"
+                  id="submit-btn"
+                  class="btn btn-primary"
+                  style="width: 100%; padding: 0.85rem; font-size: 1rem; cursor: pointer"
+                  data-i18n="btnSubmit"
+                >
+                  Submit Registration
+                </button>
+              </form>
 
-              <button type="submit" id="submit-btn" class="btn btn-primary" style="width:100%; padding:0.85rem; font-size:1rem; cursor:pointer;" data-i18n="btnSubmit">Submit Registration</button>
-            </form>
-
-            <div id="form-feedback" class="feedback-banner hidden" role="alert" style="margin-top:1.5rem;"></div>
+              <div id="form-feedback" class="feedback-banner hidden" role="alert" style="margin-top: 1.5rem"></div>
+            </div>
           </div>
         </div>
-        
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="site-footer" id="site-footer"></footer>
+    <footer class="site-footer" id="site-footer"></footer>
 
-  <!-- Teammates' scripts preserved -->
-  <script src="js/site-config.js"></script>
-  <script src="js/nav.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/i18n.js"></script>
+    <!-- Teammates' scripts preserved -->
+    <script src="js/site-config.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/i18n.js"></script>
 
-  <!-- Interactive Form Logic -->
-  <script>
-    const form = document.getElementById("registration-form");
-    const feedback = document.getElementById("form-feedback");
-    const submitBtn = document.getElementById("submit-btn");
+    <!-- Interactive Form Logic -->
+    <script>
+      const form = document.getElementById("registration-form");
+      const feedback = document.getElementById("form-feedback");
+      const submitBtn = document.getElementById("submit-btn");
 
-    const wantsAbstract = document.getElementById("wantsAbstract");
-    const abstractFields = document.getElementById("abstract-fields");
-    const talkTitle = document.getElementById("talkTitle");
-    const talkAffiliation = document.getElementById("talkAffiliation");
-    const abstractText = document.getElementById("abstractText");
-    const charCount = document.getElementById("charCount");
+      const wantsAbstract = document.getElementById("wantsAbstract");
+      const abstractFields = document.getElementById("abstract-fields");
+      const talkTitle = document.getElementById("talkTitle");
+      const talkAffiliation = document.getElementById("talkAffiliation");
+      const abstractText = document.getElementById("abstractText");
+      const charCount = document.getElementById("charCount");
 
-    if (wantsAbstract) {
-      wantsAbstract.addEventListener("change", () => {
-        if (wantsAbstract.checked) {
-          abstractFields.classList.remove("hidden");
-          talkTitle.required = true;
-          talkAffiliation.required = true;
-          abstractText.required = true;
-        } else {
-          abstractFields.classList.add("hidden");
-          talkTitle.required = false;
-          talkAffiliation.required = false;
-          abstractText.required = false;
-          talkTitle.value = "";
-          talkAffiliation.value = "";
-          abstractText.value = "";
-          charCount.innerText = "0";
-        }
-      });
-    }
+      if (wantsAbstract) {
+        wantsAbstract.addEventListener("change", () => {
+          if (wantsAbstract.checked) {
+            abstractFields.classList.remove("hidden");
+            talkTitle.required = true;
+            talkAffiliation.required = true;
+            abstractText.required = true;
+          } else {
+            abstractFields.classList.add("hidden");
+            talkTitle.required = false;
+            talkAffiliation.required = false;
+            abstractText.required = false;
+            talkTitle.value = "";
+            talkAffiliation.value = "";
+            abstractText.value = "";
+            charCount.innerText = "0";
+          }
+        });
+      }
 
-    if (abstractText) {
-      abstractText.addEventListener("input", () => {
-        charCount.innerText = abstractText.value.length;
-      });
-    }
+      if (abstractText) {
+        abstractText.addEventListener("input", () => {
+          charCount.innerText = abstractText.value.length;
+        });
+      }
 
-    if (form) {
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        submitBtn.disabled = true;
-        submitBtn.innerText = "Submitting registration...";
-        feedback.className = "feedback-banner hidden";
+      if (form) {
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          submitBtn.disabled = true;
+          submitBtn.innerText = "Submitting registration...";
+          feedback.className = "feedback-banner hidden";
 
-        const formData = new FormData(form);
-        const urlEncoded = new URLSearchParams(formData);
+          const formData = new FormData(form);
+          const urlEncoded = new URLSearchParams(formData);
 
-        try {
-          const response = await fetch(form.action, {
-            method: "POST",
-            body: urlEncoded
-          });
-          const res = await response.json();
+          try {
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: urlEncoded,
+            });
+            const res = await response.json();
 
-          if (res.result === "success") {
-          form.style.display = "none";
-          feedback.className = "feedback-banner success";
-          feedback.innerHTML = `
+            if (res.result === "success") {
+              form.style.display = "none";
+              feedback.className = "feedback-banner success";
+              feedback.innerHTML = `
             <h3>Registration Confirmed!</h3>
             <p>You are officially registered as <strong>attendee #${res.row}</strong> of 199.</p>
             <p>A confirmation email and practical guidance will follow as the event approaches.</p>
           `;
-        } else if (res.result === "error" && res.error === "capacity_reached") {
-          form.style.display = "none";
-          feedback.className = "feedback-banner warning";
-          feedback.innerHTML = `
+            } else if (res.result === "error" && res.error === "capacity_reached") {
+              form.style.display = "none";
+              feedback.className = "feedback-banner warning";
+              feedback.innerHTML = `
             <h3>Capacity Reached (199/199)</h3>
             <p>In-person registration is currently full. Please contact the organizing committee to join the waitlist.</p>
           `;
-        } else if (res.result === "error" && res.error === "duplicate_email") {
-          // DUPLICATE EMAIL HANDLER
-          feedback.className = "feedback-banner warning";
-          const currentLang = document.documentElement.lang || 'en';
-          const msg = (typeof translations !== 'undefined' && translations[currentLang]?.errDuplicateEmail)
-            ? translations[currentLang].errDuplicateEmail
-            : "This email address is already registered.";
-          feedback.innerHTML = `<h3>Already Registered</h3><p>${msg}</p>`;
-          submitBtn.disabled = false;
-          submitBtn.innerText = (typeof translations !== 'undefined' && translations[currentLang]?.btnSubmit) 
-            ? translations[currentLang].btnSubmit 
-            : "Submit Registration";
-        } else {
-          feedback.className = "feedback-banner error";
-          feedback.innerHTML = `<p>An error occurred while submitting your registration. Please try again.</p>`;
-          submitBtn.disabled = false;
-          submitBtn.innerText = "Submit Registration";
-        }
-        } catch (err) {
-          feedback.className = "feedback-banner error";
-          feedback.innerHTML = `<p>Network error. Please check your internet connection and retry.</p>`;
-          submitBtn.disabled = false;
-          submitBtn.innerText = "Submit Registration";
-        }
-      });
-    }
-  </script>
-</body>
-</html> 
+            } else if (res.result === "error" && res.error === "duplicate_email") {
+              // DUPLICATE EMAIL HANDLER
+              feedback.className = "feedback-banner warning";
+              const currentLang = document.documentElement.lang || "en";
+              const msg =
+                typeof translations !== "undefined" && translations[currentLang]?.errDuplicateEmail
+                  ? translations[currentLang].errDuplicateEmail
+                  : "This email address is already registered.";
+              feedback.innerHTML = `<h3>Already Registered</h3><p>${msg}</p>`;
+              submitBtn.disabled = false;
+              submitBtn.innerText =
+                typeof translations !== "undefined" && translations[currentLang]?.btnSubmit
+                  ? translations[currentLang].btnSubmit
+                  : "Submit Registration";
+            } else {
+              feedback.className = "feedback-banner error";
+              feedback.innerHTML = `<p>An error occurred while submitting your registration. Please try again.</p>`;
+              submitBtn.disabled = false;
+              submitBtn.innerText = "Submit Registration";
+            }
+          } catch (err) {
+            feedback.className = "feedback-banner error";
+            feedback.innerHTML = `<p>Network error. Please check your internet connection and retry.</p>`;
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Submit Registration";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
