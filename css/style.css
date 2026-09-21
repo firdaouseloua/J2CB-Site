@@ -650,3 +650,111 @@ textarea:focus {
   border: 1px solid #fca5a5;
   color: #991b1b;
 }
+
+/* ==========================================================================
+   Keynote Speakers Section
+   ========================================================================== */
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.speaker-card {
+  position: relative;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 30px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  align-items: center;
+  box-shadow: 0 12px 35px rgba(6, 26, 43, 0.05);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(6, 26, 43, 0.08);
+  border-color: #c4d9ce;
+}
+
+.speaker-image-wrapper {
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 130px;
+  max-height: 130px;
+  flex: 0 0 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 16px rgba(6, 26, 43, 0.08);
+  background: var(--soft);
+}
+
+.speaker-photo {
+  width: 130px !important;
+  height: 130px !important;
+  min-width: 130px !important;
+  max-width: 130px !important;
+  min-height: 130px !important;
+  max-height: 130px !important;
+  border-radius: 50%;
+  object-fit: cover !important;
+  display: block;
+}
+
+.speaker-info {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.speaker-badge {
+  display: inline-block;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.speaker-name {
+  margin: 0 0 4px;
+  color: var(--navy);
+  font-size: 1.3rem;
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.speaker-institution {
+  color: var(--green);
+  font-weight: 650;
+  font-size: 0.94rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .speakers-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .speaker-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 26px 20px;
+  }
+
+  .speaker-image-wrapper {
+    margin-inline: auto;
+  }
+}
+
+
