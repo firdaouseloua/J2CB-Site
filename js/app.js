@@ -29,7 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelectorAll("[data-config='date']").forEach(el => {
-      el.textContent = cfg.conferenceDate || (lang === "fr" ? "À venir" : "To be announced");
+      const date = cfg.conferenceDate;
+
+      el.textContent =
+        (typeof date === "string" ? date : date?.[lang]) ||
+        (lang === "fr" ? "À venir" : "To be announced");
     });
 
     const email = cfg.contactEmail || "jc2b.paris.saclay@gmail.com";

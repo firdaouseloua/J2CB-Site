@@ -8,7 +8,10 @@ window.JC2B_CONFIG = {
   registrationEmbedUrl: "",
 
   // Central conference details: edit here when confirmed.
-  conferenceDate: "",
-  conferenceVenue: "I2BC · Paris-Saclay",
+  conferenceDate: {
+    fr: "12 novembre 2026 · à confirmer",
+    en: "12 November 2026 · to be confirmed"
+  },
+  conferenceVenue: "I2BC",
   contactEmail: "jc2b.paris.saclay@gmail.com"
 };

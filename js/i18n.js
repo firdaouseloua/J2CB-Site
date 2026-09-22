@@ -14,6 +14,8 @@ const translations = {
     homeTitleB: "through data",
     homeLead: "Organised by students from the Master 2 BIBS-IA programme at Université Paris-Saclay, JC2B brings together students and researchers to share their work in bioinformatics, biostatistics and artificial intelligence.",
     
+    discoverScope: "Explore the scientific scope",
+    
     snapshotLabel: "Conference snapshot",
     snapshotDate: "Date",
     snapshotVenue: "Venue",

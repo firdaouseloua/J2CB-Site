@@ -321,8 +321,11 @@
       if (form) {
         form.addEventListener("submit", async (e) => {
           e.preventDefault();
+          const isFr = document.documentElement.lang === "fr";
           submitBtn.disabled = true;
-          submitBtn.innerText = "Submitting registration...";
+          submitBtn.innerText = isFr
+            ? "Envoi en cours..."
+            : "Submitting registration...";
           feedback.className = "feedback-banner hidden";
 
           const formData = new FormData(form);
@@ -338,18 +341,21 @@
             if (res.result === "success") {
               form.style.display = "none";
               feedback.className = "feedback-banner success";
-              feedback.innerHTML = `
-            <h3>Registration Confirmed!</h3>
-            <p>You are officially registered as <strong>attendee #${res.row}</strong> of 199.</p>
-            <p>A confirmation email and practical guidance will follow as the event approaches.</p>
-          `;
+              feedback.innerHTML = isFr
+                ? `<h3>Inscription reçue</h3>
+                  <p>Merci ! Votre inscription a bien été reçue.</p>
+                  <p>Pour toute question ou modification, contactez l’équipe organisatrice.</p>`
+                : `<h3>Registration received</h3>
+                  <p>Thank you! Your registration has been received.</p>
+                  <p>For questions or changes, please contact the organising team.</p>`;
             } else if (res.result === "error" && res.error === "capacity_reached") {
               form.style.display = "none";
               feedback.className = "feedback-banner warning";
-              feedback.innerHTML = `
-            <h3>Capacity Reached (199/199)</h3>
-            <p>In-person registration is currently full. Please contact the organizing committee to join the waitlist.</p>
-          `;
+              feedback.innerHTML = isFr
+                ? `<h3>Les inscriptions sont complètes.</h3>
+                  <p>Contactez l’équipe organisatrice pour connaître les possibilités de participation.</p>`
+                : `<h3>Registration is full</h3>
+                  <p>Contact the organising team to ask about participation options.</p>`;
             } else if (res.result === "error" && res.error === "duplicate_email") {
               // DUPLICATE EMAIL HANDLER
               feedback.className = "feedback-banner warning";
@@ -358,7 +364,9 @@
                 typeof translations !== "undefined" && translations[currentLang]?.errDuplicateEmail
                   ? translations[currentLang].errDuplicateEmail
                   : "This email address is already registered.";
-              feedback.innerHTML = `<h3>Already Registered</h3><p>${msg}</p>`;
+              feedback.innerHTML = isFr
+                ? `<h3>Déjà inscrit</h3><p>${msg}</p>`
+                : `<h3>Already Registered</h3><p>${msg}</p>`;
               submitBtn.disabled = false;
               submitBtn.innerText =
                 typeof translations !== "undefined" && translations[currentLang]?.btnSubmit
@@ -366,15 +374,23 @@
                   : "Submit Registration";
             } else {
               feedback.className = "feedback-banner error";
-              feedback.innerHTML = `<p>An error occurred while submitting your registration. Please try again.</p>`;
+              feedback.innerHTML = isFr
+                ? `<p>Une erreur s'est produite lors de la soumission de votre inscription. Veuillez réessayer.</p>`
+                : `<p>An error occurred while submitting your registration. Please try again.</p>`;
               submitBtn.disabled = false;
-              submitBtn.innerText = "Submit Registration";
+              submitBtn.innerText = isFr
+                ? "Valider mon inscription"
+                : "Submit registration";
             }
           } catch (err) {
             feedback.className = "feedback-banner error";
-            feedback.innerHTML = `<p>Network error. Please check your internet connection and retry.</p>`;
+            feedback.innerHTML = isFr
+              ? `<p>Nous n’avons pas pu confirmer la réception de votre inscription. Contactez l’équipe organisatrice avant de réessayer.</p>`
+              : `<p>We could not confirm receipt of your registration. Please contact the organising team before trying again.</p>`;
             submitBtn.disabled = false;
-            submitBtn.innerText = "Submit Registration";
+            submitBtn.innerText = isFr
+              ? "Valider mon inscription"
+              : "Submit Registration";
           }
         });
       }
