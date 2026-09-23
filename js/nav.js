@@ -18,9 +18,15 @@
   if (header) {
     header.innerHTML = `
       <div class="nav-shell container">
-        <a class="site-logo" href="index.html" aria-label="JC2B 2026 home">
-          <img src="images/logos/jc2b-header-mark.png" alt="JC2B 2026 — Junior Conference of Computational Biology" />
-        </a>
+        <div class="site-brand-group">
+          <a class="site-logo" href="index.html" aria-label="JC2B 2026 home">
+            <img src="images/logos/jc2b-header-mark.png" alt="JC2B 2026 — Junior Conference of Computational Biology" />
+          </a>
+          <span class="brand-separator" aria-hidden="true"></span>
+          <a class="site-logo partner-header-logo" href="https://www.universite-paris-saclay.fr/" target="_blank" rel="noopener noreferrer" aria-label="Université Paris-Saclay">
+            <img src="images/logos/paris-saclay-university1609.jpg" alt="Université Paris-Saclay" />
+          </a>
+        </div>
 
         <nav class="desktop-nav" aria-label="Primary navigation">
           ${navHtml}
