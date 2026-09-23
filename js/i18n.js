@@ -21,6 +21,8 @@ const translations = {
     snapshotVenue: "Venue",
     snapshotLanguage: "Working language",
     snapshotLangValue: "English",
+    snapshotSpeakers: "Keynote speakers",
+    snapshotSpeakersValue: "Johannes Söding · Antoine Limasset",
     snapshotFormat: "Format",
     snapshotFormatValue: "Talks · discussion · networking",
     
@@ -219,7 +221,7 @@ const translations = {
     homeEyebrow: "Junior Conference of Computational Biology · 2026",
     
     homeTitleA: "Explorer le vivant",
-    homeTitleB: "à travers les données",
+    homeTitleB: "par les données",
     
     homeLead: "Organisée par les étudiants du Master 2 BIBS-IA de l’Université Paris-Saclay, la JC2B réunit étudiants et chercheurs pour partager leurs travaux en bioinformatique, biostatistiques et intelligence artificielle.",
     discoverScope: "Découvrir les thématiques scientifiques",
@@ -228,6 +230,8 @@ const translations = {
     snapshotVenue: "Lieu",
     snapshotLanguage: "Langue de travail",
     snapshotLangValue: "Anglais",
+    snapshotSpeakers: "Intervenants",
+    snapshotSpeakersValue: "Johannes Söding · Antoine Limasset",
     snapshotFormat: "Format",
     snapshotFormatValue: "Présentations · discussions · networking",
     
