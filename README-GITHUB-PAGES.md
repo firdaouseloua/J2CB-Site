@@ -3,7 +3,6 @@
 ## Structure
 - `index.html` — homepage
 - `about.html` — About
-- `scope.html` — Scientific scope
 - `programme.html` — Programme + important dates
 - `abstracts.html` — contribution / abstract information + future abstract book area
 - `practical.html` — venue and access

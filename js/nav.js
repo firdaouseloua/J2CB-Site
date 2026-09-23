@@ -4,7 +4,6 @@
   const links = [
     ["home", "index.html", "navHome", "Home"],
     ["about", "about.html", "navAbout", "About"],
-    ["scope", "scope.html", "navScope", "Scientific scope"],
     ["programme", "programme.html", "navProgramme", "Programme"],
     ["abstracts", "abstracts.html", "navAbstracts", "Abstracts"],
     ["practical", "practical.html", "navPractical", "Practical info"],
@@ -71,7 +70,6 @@
         <div class="footer-links">
           <a href="index.html" data-i18n="navHome">Home</a>
           <a href="about.html" data-i18n="navAbout">About</a>
-          <a href="scope.html" data-i18n="navScope">Scientific scope</a>
           <a href="programme.html" data-i18n="navProgramme">Programme</a>
           <a href="abstracts.html" data-i18n="navAbstracts">Abstracts</a>
         </div>
